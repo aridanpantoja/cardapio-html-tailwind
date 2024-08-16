@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="h-full">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/920b610717.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-slate-50">
-    <header class="sticky top-0 z-10 w-full border shadow-sm bg-white">
+<body class="flex flex-col bg-slate-50 h-full">
+    <header class="sticky top-0 z-10 w-full border-b shadow-sm bg-white">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
-            <a href="/">Logo</a>
+            <a href="">Logo</a>
             <nav>
                 <ul class="flex items-center gap-6">
                     <li><a href="#sobre">Sobre</a></li>
@@ -22,7 +23,7 @@
         </div>
     </header>
 
-    <main class="max-w-screen-xl mx-auto px-4 sm:px-8">
+    <main class="max-w-screen-xl mx-auto px-4 sm:px-8 flex-grow flex-1">
         <section>
             <h2>Produtos</h2>
             <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -61,6 +62,16 @@
             </ul>
         </section>
     </main>
+
+    <footer class="w-full border-t shadow-sm bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
+            <p class="mx-auto text-center">
+                Feito por Aridan. O código-fonte está disponível no <a
+                    href="https://github.com/aridanpantoja/cardapio-html-tailwind"
+                    class="underline underline-offset-2">Github</a>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
