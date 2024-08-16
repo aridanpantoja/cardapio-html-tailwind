@@ -23,13 +23,21 @@
     <header class="sticky top-0 z-10 w-full shadow-sm bg-slate-800">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
             <a href="">Logo</a>
-            <nav>
+            <nav class="absolute right-1/2 translate-x-1/2 hidden sm:block">
                 <ul class="flex items-center gap-6">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#precos">Preços</a></li>
                 </ul>
             </nav>
+            <div class="space-x-4">
+                <a href="" class="hidden sm:block">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <div class="block sm:hidden hover:cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
         </div>
     </header>
 
