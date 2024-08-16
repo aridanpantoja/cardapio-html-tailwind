@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/920b610717.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+    </style>
 </head>
 
-<body class="flex flex-col bg-slate-50 h-full">
-    <header class="sticky top-0 z-10 w-full border-b shadow-sm bg-white">
+<body class="flex flex-col bg-slate-900 h-full text-white">
+    <header class="sticky top-0 z-10 w-full shadow-sm bg-slate-800">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
             <a href="">Logo</a>
             <nav>
@@ -24,37 +34,44 @@
     </header>
 
     <main class="max-w-screen-xl mx-auto px-4 sm:px-8 flex-grow flex-1">
-        <section>
-            <h2>Produtos</h2>
+        <section class="py-20 space-y-8">
+            <div class="max-w-prose mx-auto text-center space-y-2">
+                <h2 class="text-3xl font-semibold">Produtos</h2>
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém vê os
+                    tombis que eu levo! Aenean aliquam molestie leo, vitae iaculis nisl
+                </p>
+            </div>
+
             <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <li class="flex flex-col overflow-hidden rounded-xl border shadow-sm bg-white">
+                <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Menu Item"
                             className="object-cover w-full" />
                     </div>
-                    <div class="space-y-2 p-6">
+                    <div class="space-y-2 p-6 border-t border-slate-700">
                         <h3 class="text-xl font-semibold leading-none tracking-tight">Produto 1</h3>
                         <p class="text-sm">Descrição do produto 1</p>
                     </div>
                 </li>
 
-                <li class="flex flex-col overflow-hidden rounded-xl border shadow-sm bg-white">
+                <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Menu Item"
                             className="object-cover w-full" />
                     </div>
-                    <div class="space-y-2 p-6">
+                    <div class="space-y-2 p-6 border-t border-slate-700">
                         <h3 class="text-xl font-semibold leading-none tracking-tight">Produto 2</h3>
                         <p class="text-sm">Descrição do produto 2</p>
                     </div>
                 </li>
 
-                <li class="flex flex-col overflow-hidden rounded-xl border shadow-sm bg-white">
+                <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Menu Item"
-                            class="object-cover w-full" />
+                            className="object-cover w-full" />
                     </div>
-                    <div class="space-y-2 p-6">
+                    <div class="space-y-2 p-6 border-t border-slate-700">
                         <h3 class="text-xl font-semibold leading-none tracking-tight">Produto 3</h3>
                         <p class="text-sm">Descrição do produto 3</p>
                     </div>
@@ -63,7 +80,7 @@
         </section>
     </main>
 
-    <footer class="w-full border-t shadow-sm bg-white">
+    <footer class="w-full shadow-sm bg-slate-800">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
             <p class="mx-auto text-center">
                 Feito por Aridan. O código-fonte está disponível no <a
