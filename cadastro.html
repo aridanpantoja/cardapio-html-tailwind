@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragoniza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/920b610717.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col bg-slate-900 h-full text-white">
+    <header class="sticky top-0 w-full shadow-sm bg-slate-800">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
+            <a href="#">
+                <span class="font-bold">Dragoniza</span>
+                <i class="ml-1 fa-solid fa-dragon text-sky-500"></i>
+            </a>
+            <nav class="absolute right-1/2 translate-x-1/2 hidden sm:block">
+                <ul class="flex items-center gap-6">
+                    <li><a href="./sobre.html" class="hover:underline underline-offset-2">Sobre</a></li>
+                    <li><a href="./cadastro.html" class="hover:underline underline-offset-2">Cadastro</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="hidden sm:block">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <div class="block sm:hidden hover:cursor-pointer">
+                <input id="menu" class="peer/menu hidden" type="checkbox" />
+                <label for="menu" class="hover:cursor-pointer peer-checked/menu:text-sky-500">
+                    <i class="fa-solid fa-bars peer-checked/menu:hidden"></i>
+                </label>
+
+                <div class="peer-checked/menu:block hidden">
+                    <nav
+                        class="fixed top-0 right-0 left-0 w-full flex items-center justify-center bg-slate-800 -z-20 transition-all">
+                        <ul class="flex flex-col items-center w-full pt-16 text-center ">
+                            <li class="border-t w-full border-slate-700 py-4">
+                                <a href="./sobre.html" class="hover:underline underline-offset-2">Sobre</a>
+                            </li>
+                            <li class="border-t w-full border-slate-700 py-4">
+                                <a href="./cadastro.html" class="hover:underline underline-offset-2">Cadastro</a>
+                            </li>
+                            <li class="border-y w-full border-slate-700 py-4">
+                                <a href="#" class="hover:underline underline-offset-2">
+                                    Carrinho <i class="fa-solid fa-bag-shopping ml-1"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="max-w-screen-xl flex items-center mx-auto px-4 sm:px-8 flex-grow flex-1 w-full h-full">
+        <section class="flex items-center justify-center w-full">
+            <div class="space-y-2 max-w-[500px] w-full">
+                <h1 class="text-3xl sm:text-4xl font-semibold text-center">Adicionar Dragão</h1>
+                
+                <form class="space-y-6">
+                    <div class="space-y-2">
+                        <label for="name" class="font-bold mb-2">Nome</label>
+                        <input type="text" id="name" name="name" class=" border rounded w-full py-2 px-3 text-gray-700 focus:outline-sky-500 outline-offset-2" placeholder="Nome do Dragão">
+                    </div>
+                    <div class="space-y-2">
+                        <label for="description" class="font-bold mb-2">Descrição</label>
+                        <textarea id="description" name="description" class="resize-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-sky-500 outline-offset-2" placeholder="Descrição do Dragão"></textarea>
+                    </div>
+                    <div class="space-y-2">
+                        <label for="price" class="font-bold mb-2">Preço</label>
+                        <input type="number" id="price" name="price" class=" border rounded w-full py-2 px-3 text-gray-700 focus:outline-sky-500 outline-offset-2" placeholder="Preço do Dragão">
+                    </div>
+
+                    <button type="submit" class="bg-sky-500 hover:bg-sky-600 transition-all font-bold py-2 px-4 rounded w-full">Cadastrar</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full shadow-sm bg-slate-800">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
+            <p class="mx-auto text-center">
+                Feito por Aridan. O código-fonte está disponível no <a
+                    href="https://github.com/aridanpantoja/cardapio-html-tailwind"
+                    class="underline underline-offset-2">Github</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
