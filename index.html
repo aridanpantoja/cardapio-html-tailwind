@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="h-full">
+<html lang="pt-BR" class="h-full scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dragoniza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,12 +14,12 @@
     <script src="https://kit.fontawesome.com/920b610717.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Dm Sans', sans-serif;
         }
     </style>
 </head>
 
-<body class="flex flex-col bg-slate-900 h-full text-white">
+<body class="flex flex-col bg-slate-900 h-full text-white ">
     <header class="sticky top-0 w-full shadow-sm bg-slate-800">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-8 h-16 flex items-center justify-between relative">
             <a href="#">
@@ -29,11 +29,10 @@
             <nav class="absolute right-1/2 translate-x-1/2 hidden sm:block">
                 <ul class="flex items-center gap-6">
                     <li><a href="./sobre.html" class="hover:underline underline-offset-2">Sobre</a></li>
-                    <li><a href="./produtos.html" class="hover:underline underline-offset-2">Produtos</a></li>
-                    <li><a href="./cadastro.html" class="hover:underline underline-offset-2">Preços</a></li>
+                    <li><a href="./cadastro.html" class="hover:underline underline-offset-2">Cadastro</a></li>
                 </ul>
             </nav>
-            <a href="./carrinho.html" class="hidden sm:block">
+            <a href="#" class="hidden sm:block">
                 <i class="fa-solid fa-bag-shopping"></i>
             </a>
             <div class="block sm:hidden hover:cursor-pointer">
@@ -50,13 +49,10 @@
                                 <a href="./sobre.html" class="hover:underline underline-offset-2">Sobre</a>
                             </li>
                             <li class="border-t w-full border-slate-700 py-4">
-                                <a href="./produtos.html" class="hover:underline underline-offset-2">Produtos</a>
-                            </li>
-                            <li class="border-t w-full border-slate-700 py-4">
                                 <a href="./cadastro.html" class="hover:underline underline-offset-2">Cadastro</a>
                             </li>
                             <li class="border-y w-full border-slate-700 py-4">
-                                <a href="./carrinho.html" class="hover:underline underline-offset-2">
+                                <a href="#" class="hover:underline underline-offset-2">
                                     Carrinho <i class="fa-solid fa-bag-shopping ml-1"></i>
                                 </a>
                             </li>
@@ -71,7 +67,7 @@
     <main class="max-w-screen-xl mx-auto px-4 sm:px-8 flex-grow flex-1">
         <section class="py-20 space-y-8">
             <div class="max-w-prose mx-auto text-center space-y-2">
-                <h2 class="text-3xl font-semibold">Produtos</h2>
+                <h2 class="text-3xl font-semibold">Dragoniza - Alugue o seu dragão</h2>
                 <p>
                     Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém vê os
                     tombis que eu levo! Aenean aliquam molestie leo, vitae iaculis nisl
@@ -80,40 +76,79 @@
 
             <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Menu Item"
-                            className="object-cover w-full" />
+                    <div class="flex items-center justify-center overflow-hidden">
+                        <img src="./assets/images/Drogon.jpg" alt="Drogon"
+                            className="" width="640" height="360" />
                     </div>
                     <div class="space-y-2 p-4 border-t border-slate-700 text-center">
-                        <h3 class="text-xl font-semibold leading-none tracking-tight">Produto 1</h3>
-                        <p class="text-sm">Descrição do produto 1</p>
-                        <p class="text-2xl font-bold">R$99,99</p>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Drogon</h3>
+                        <p class="text-sm">Preto com marcas vermelhas. Maior e mais agressivo que seus irmãos,foi montaria de Daenerys Targaryen.</p>
+                        <p class="text-2xl font-bold">R$849,90</p>
                     </div>
                     </div>
                 </li>
 
                 <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Menu Item"
-                            className="object-cover w-full" />
+                    <div class="flex items-center justify-center overflow-hidden">
+                        <img src="./assets/images/Rhaegal.jpg" alt="Rhaegal"
+                            className="" width="640" height="360" />
                     </div>
                     <div class="space-y-2 p-4 border-t border-slate-700 text-center">
-                        <h3 class="text-xl font-semibold leading-none tracking-tight">Produto 2</h3>
-                        <p class="text-sm">Descrição do produto 2</p>
-                        <p class="text-2xl font-bold">R$99,99</p>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Rhaegal</h3>
+                        <p class="text-sm">Verde com marcas de bronze. Obedecia aos comandos de Daenerys e foi a montaria de Jon Snow.</p>
+                        <p class="text-2xl font-bold">R$749,90</p>
                     </div>
                     </div>
                 </li>
 
                 <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Menu Item"
-                            className="object-cover w-full" />
+                    <div class="flex items-center justify-center overflow-hidden">
+                        <img src="./assets/images/Viserion.jpg" alt="Viserion"
+                            className="" width="640" height="360" />
                     </div>
                     <div class="space-y-2 p-4 border-t border-slate-700 text-center">
-                        <h3 class="text-xl font-semibold leading-none tracking-tight">Produto 3</h3>
-                        <p class="text-sm">Descrição do produto 3</p>
-                        <p class="text-2xl font-bold">R$99,99</p>
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Viserion</h3>
+                        <p class="text-sm">Branco cremoso, com marcas de ouro. Obedecia aos comandos de Daenerys, até ser morto.</p>
+                        <p class="text-2xl font-bold">R$699,90</p>
+                    </div>
+                    </div>
+                </li>
+
+                <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
+                    <div class="flex items-center justify-center overflow-hidden">
+                        <img src="./assets/images/Dreamfyre.jpg" alt="Dreamfyre"
+                            className="" width="640" height="360" />
+                    </div>
+                    <div class="space-y-2 p-4 border-t border-slate-700 text-center">
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Dreamfyre</h3>
+                        <p class="text-sm">Um dragão que viveu durante a Dança dos Dragões.</p>
+                        <p class="text-2xl font-bold">R$749,90</p>
+                    </div>
+                    </div>
+                </li>
+
+                <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
+                    <div class="flex items-center justify-center overflow-hidden">
+                        <img src="./assets/images/Fumaresia.jpg" alt="Fumaresia"
+                            className="" width="640" height="360" />
+                    </div>
+                    <div class="space-y-2 p-4 border-t border-slate-700 text-center">
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Fumaresia</h3>
+                        <p class="text-sm">Um dragão que viveu durante a Dança dos Dragões.</p>
+                        <p class="text-2xl font-bold">R$799,90</p>
+                    </div>
+                    </div>
+                </li>
+
+                <li class="flex flex-col overflow-hidden rounded-xl border border-slate-700 shadow-sm bg-slate-800">
+                    <div class="flex items-center justify-center overflow-hidden">
+                        <img src="./assets/images/Vermithor.jpg" alt="Vermithor"
+                            className="" width="640" height="360" />
+                    </div>
+                    <div class="space-y-2 p-4 border-t border-slate-700 text-center">
+                        <h3 class="text-xl font-semibold leading-none tracking-tight">Vermithor</h3>
+                        <p class="text-sm">Um dragão que viveu durante a Dança dos Dragões.</p>
+                        <p class="text-2xl font-bold">R$949,90</p>
                     </div>
                     </div>
                 </li>
