@@ -25,11 +25,11 @@ Este repositório contém um catálogo de produtos desenvolvido utilizando apena
       <td>É necessário ter um header com navegação para outras páginas HTML (Sobre e Cadastro), que deverá colapsar a partir de uma certa largura</td>
     </tr>
     <tr>
-      <td></td>
+      <td>✅</td>
       <td>A página de sobre deve ter uma imagem grande e uma descrição</td>
     </tr>
     <tr>
-      <td></td>
+      <td>✅</td>
       <td>A página de cadastro deve ter um formulário para cadastrar um item no catálogo</td>
     </tr>
     <tr>
